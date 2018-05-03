@@ -1,0 +1,42 @@
+{
+    "env": {
+        "development": {
+            "presets": [
+                "next/babel"
+            ],
+            "plugins": [
+                [
+                    "import",
+                    {
+                        "libraryName": "antd-mobile"
+                    }
+                ]
+            ]
+        },
+        "production": {
+            "presets": [
+                "next/babel"
+            ],
+            "plugins": [
+                [
+                    "import",
+                    {
+                        "libraryName": "antd-mobile"
+                    }
+                ]
+            ]
+        },
+        "test": {
+            "presets": [
+                [
+                    "next/babel",
+                    {
+                        "preset-env": {
+                            "modules": "commonjs"
+                        }
+                    }
+                ]
+            ]
+        }
+    }
+}
