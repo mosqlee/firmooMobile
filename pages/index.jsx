@@ -14,9 +14,9 @@ import withRedux from '../lib/withRedux';
 
 import { getSwiperInfo } from '../redux/actions/swiperInfo';
 // components;
-import Swiper from './../components/swiper.jsx';
 import PureComponent from '../components/PureComponent/PureComponent.jsx';
 import NavComm from '../components/Nav/Nav.jsx';
+import Swiper from './../components/Swiper/Swiper.jsx';
 
 // component
 /**
@@ -58,6 +58,7 @@ class App extends Component {
       <div>
         <NavComm t={this.t} isServer={this.props.isServer}>
           <PureComponent t={this.t} />
+          <Swiper></Swiper>
         </NavComm>
         {/* <p>{this.t('common:integrates_react-i18next')}</p> */}
 
