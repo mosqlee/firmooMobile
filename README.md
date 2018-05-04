@@ -114,3 +114,9 @@ const atom = {
 6.不要使用混淆，使用HOC或者props.renders来提升组件的复用性。
 
 7.
+
+
+
+
+##其他
+firmooMobile\node_modules\rmc-nuka-carousel\es\carousel.js中的620行需要特殊处理一下
