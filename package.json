@@ -33,6 +33,7 @@
     "core-js": "^2.5.5",
     "crypto": "^1.0.1",
     "express": "4.16.2",
+    "fast-json-stringify": "^1.5.2",
     "i18next": "^11.2.2",
     "i18next-browser-languagedetector": "^2.2.0",
     "i18next-express-middleware": "1.0.10",

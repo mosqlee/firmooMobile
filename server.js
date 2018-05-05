@@ -9,7 +9,8 @@ const { i18nInstance } = require('./i18n');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
-
+// 
+const licenceHandle = require('./nodeApi/awsS3');
 // init i18next with serverside settings
 // using i18next-express-middleware
 i18nInstance
@@ -44,6 +45,7 @@ i18nInstance
           return res.json({ test: 1, type: typeof (a) });
         }
         server.get('/test', test);
+        server.post('/licence', licenceHandle);
         // use next.js
         server.get('*', (req, res) => handle(req, res));
 
