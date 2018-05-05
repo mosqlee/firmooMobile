@@ -64,6 +64,9 @@ function convertBase64UrlToBlob(urlData){
   }
   return new Blob([ab], { type: 'image/png' });
 }
+function submit(file){
+
+}
 class Upload extends Component {
   static propTypes = {
     render: PropTypes.func.isRequired
@@ -74,8 +77,13 @@ class Upload extends Component {
   }
   render() { 
     return (
-      <div>{this.props.render(this.state)}</div>
+      // <div>{this.props.render(this.state)}</div>
+      <div>
+        <input type="file"/>
+        <button onclick={() => submit}>submit</button>
+      </div>
     );
+    
   }
 }
  
