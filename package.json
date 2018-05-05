@@ -31,6 +31,7 @@
     "antd-mobile": "^2.1.8",
     "axios": "^0.18.0",
     "core-js": "^2.5.5",
+    "crypto": "^1.0.1",
     "express": "4.16.2",
     "i18next": "^11.2.2",
     "i18next-browser-languagedetector": "^2.2.0",

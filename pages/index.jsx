@@ -39,7 +39,6 @@ class App extends Component {
     super(props);
     this.t = this.props.t;
     // 根据这个变量来确认请求不同语言的接口
-    this.lang = this.props;
     // console.log(this.props,'lang'.repeat(100))
     // en-US,zh-CN
   }
